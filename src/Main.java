@@ -19,6 +19,9 @@ public class Main {
         System.out.println(chcheburashka.equals(powderfill));
         System.out.println();
         System.out.println(edUsp.equals(korChu));
+        System.out.println();
+        System.out.println(edUsp.hashCode());
+        System.out.println(korChu.hashCode());
 
 
 

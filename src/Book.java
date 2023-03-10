@@ -35,7 +35,7 @@ public class Book {
     /*public boolean equals(Object year){
         Book otherBook=(Book) year;
         return this.publishingYear==otherBook.publishingYear;
-    }*/
+    } этот код я сам написал без generate */
 
     @Override
     public boolean equals(Object o) {
