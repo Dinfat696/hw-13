@@ -2,10 +2,10 @@ public class Main {
     public static void main(String[] args) {
 
         Author edUsp= new Author("Эдуард", "Успенский");
-        Author korChu= new Author("Корней", "Чуковский");
+        Author korChu= new Author("Эдуард", "Успенский");
         Book chcheburashka = new Book("Чебурашка", edUsp, 1934);
-        Book powderfill = new Book("Айболит", korChu, 1966);
-        chcheburashka.setPublishingYear(1876);
+        Book powderfill = new Book("Айболит", korChu, 1876);
+        chcheburashka.setPublishingYear(1865);
 
         System.out.println(chcheburashka.getBookName() + " " + chcheburashka.getAuthor().getLastName()+ " "+chcheburashka.getAuthor().getName()+ " " + chcheburashka.getPublishingYear() + " год ");
         System.out.println(powderfill.getBookName() + " "+ powderfill.getAuthor().getLastName()+ " " + powderfill.getAuthor().getName()+" "+ powderfill.getPublishingYear() + " год ");
@@ -17,6 +17,10 @@ public class Main {
         System.out.println(powderfill + " " + korChu);
         System.out.println();
         System.out.println(chcheburashka.equals(powderfill));
+        System.out.println();
+        System.out.println(edUsp.equals(korChu));
+
+
 
 
     }
