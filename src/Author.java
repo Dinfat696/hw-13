@@ -18,10 +18,6 @@ public class Author {
         return this.lastName;
     }
 
-    public String toString() {
-        return "Имя фамилия автора " + this.getName() + " " + this.getLastName();
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -33,5 +29,13 @@ public class Author {
     @Override
     public int hashCode() {
         return Objects.hash(name, lastName);
+    }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
     }
 }
